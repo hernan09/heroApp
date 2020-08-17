@@ -1,1 +1,10 @@
-
+.card {
+  .row {
+    .herophoto {
+      background-image: url(/assets/heroes/load2.gif);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

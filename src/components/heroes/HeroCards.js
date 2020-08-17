@@ -14,10 +14,10 @@ export const HeroCards = ({
   return (
     <div className="card ms-3 animate__animated animate__fadeIn">
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 herophoto">
           <img
             src={`./assets/heroes/${id}.jpg`}
-            className="img-fluid img-thumbnail"
+            className="img-fluid img-thumbnail imgen"
             alt="..."
           />
         </div>
