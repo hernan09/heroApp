@@ -51,7 +51,7 @@ const HeroeScreen = ({ history }) => {
               />
             </div>
             <div className="col-md-8">
-              <div className="card-body  animate__animated animate__fadeInUp">
+              <div className="card-body  animate__animated animate__fadeIn">
                 <h5 className="card-title">{superhero}</h5>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural

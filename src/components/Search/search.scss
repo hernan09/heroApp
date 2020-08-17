@@ -1,0 +1,18 @@
+.container_search {
+  h1 {
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 500px) {
+  .container_search {
+    .alert {
+      width: 50%;
+      margin: auto;
+    }
+  }
+}

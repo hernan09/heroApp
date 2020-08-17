@@ -5,6 +5,8 @@ import { useForm } from '../../Hooks/UseForm';
 import { useLocation } from 'react-router-dom';
 import { getHeroesByName } from '../../selectores/getHeroesByName';
 
+import './search.scss';
+
 const SearchScreen = ({ history }) => {
   const location = useLocation();
   const { q = '' } = queryString.parse(location.search);
@@ -20,7 +22,7 @@ const SearchScreen = ({ history }) => {
 
   const HeroesFilter = useMemo(() => getHeroesByName(q, [q]));
   return (
-    <div>
+    <div className="container_search">
       <h1>Search Screen</h1>
       <hr></hr>
       <div className="row">
@@ -37,7 +39,8 @@ const SearchScreen = ({ history }) => {
               value={searchtext}
               onChange={handleInputChange}
             ></input>
-            <button type="submit" className="btn m-1 btn-outline-primary">
+            <br></br>
+            <button type="submit" className="btn btn-block btn-outline-primary">
               Search
             </button>
           </form>
